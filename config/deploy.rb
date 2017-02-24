@@ -1,3 +1,4 @@
+require 'mina/bundler'
 require 'mina/rails'
 require 'mina/git'
 # require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
@@ -13,9 +14,9 @@ set :application_name, 'blog'
 #服务器地址,是使用ssh的方式登录服务器
 set :domain, 'root@118.89.151.182'
 #服务器中项目部署位置
-set :deploy_to, '/var/lyp-rails-app/my_blog'
+set :deploy_to, '/var/lyp-rails-app/blog'
 #git代码仓库
-set :repository, 'https://github.com/liyouping/my_blog.git'
+set :repository, 'https://github.com/liyouping/blog.git'
 #git分支
 set :branch, 'master'
 
