@@ -13,7 +13,9 @@
 !/log/.keep
 !/tmp/.keep
 
+config/database.yml
+config/application.rb
+
 # Ignore Byebug command history file.
 .byebug_history
 
-config/application.rb
