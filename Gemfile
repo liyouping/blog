@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-font-awesome', '~> 4.3.0'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
@@ -34,6 +37,24 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#分页
+gem 'kaminari'
+#配置config
+gem 'config'
+#假删除
+gem "paranoia", "~> 2.2"
+#redis
+# gem 'redis', '~>3.2'
+# gem 'sidekiq'
+#I18n
+gem 'rails-i18nterface'
+#使用bootstrap
+gem 'bootstrap-sass', '~> 3.2.0.2'
+
+#实现 markdown
+gem 'redcarpet'
+gem 'coderay'
+#实现 markdown
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
