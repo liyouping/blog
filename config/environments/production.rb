@@ -98,8 +98,8 @@ Rails.application.configure do
       address:              'smtp.163.com',
       port:                 "25",
       domain:               '163.com',
-      user_name:            Settings.email.user_name,
-      password:             Settings.email.password,
+      user_name:            Rails.configuration.emailserver['name'],
+      password:             Rails.configuration.emailserver['pwd'],
       authentication:       :plain,
       enable_starttls_auto: true  }
 

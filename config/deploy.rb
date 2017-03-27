@@ -28,7 +28,7 @@ set :branch, 'master'
 set :rvm_path, '/usr/local/rvm/scripts/rvm'
 
 # 中括号里的文件 会出现在服务器项目附录的shared文件夹中，这里加入了secrets.yml，环境密钥无需跟开发计算机一样
-set :shared_paths, ['config/database.yml', 'tmp', 'config/secrets.yml', 'config/settings/production.yml', 'log']
+set :shared_paths, ['config/database.yml', 'tmp', 'config/secrets.yml', 'config/emailserver.yml', 'log']
 
 # shared dirs and files will be symlinked into the app-folder by the 'deploy:link_shared_paths' step.
 # set :shared_dirs, fetch(:shared_dirs, []).push('somedir')
@@ -105,7 +105,7 @@ task :deploy => :environment do
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
       #queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
-      queue "pumactl -F  #{deploy_to}/#{current_path}/config/puma.rb  restart"
+      queue "pumactl -F  #{deploy_to}/#{current_path}/config/puma.rb  start"
       invoke :'deploy:cleanup'
     end
   end
