@@ -1,7 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
-
+require 'pp'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -12,7 +12,8 @@ module Blog
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-	config.eager_load_paths += %W(#{Rails.root.join}/lib #{Rails.root.join('app', 'api', '*')})
+
+	config.eager_load_paths += %W(#{Rails.root.join}/lib #{Rails.root.join('app', '*')})
 
     config.active_record.raise_in_transactional_callbacks = true
 
@@ -29,10 +30,9 @@ module Blog
 
     # Add the fonts path
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
 	config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
-    
-    
   end
 end
