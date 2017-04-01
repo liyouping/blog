@@ -15,6 +15,7 @@
 
 config/database.yml
 config/application.rb
+config/emailserver.yml
 
 # Ignore Byebug command history file.
 .byebug_history

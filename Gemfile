@@ -56,6 +56,11 @@ gem 'redcarpet'
 gem 'coderay'
 #实现 markdown
 
+#登录管理
+gem 'devise'
+#定时任务
+gem 'whenever', :require => false
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
