@@ -4,6 +4,7 @@ require 'mina/git'
 # require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
  require 'mina/rvm'    # for rvm support. (https://rvm.io)
 
+require 'mina/whenever'
 # Basic settings:
 #   domain       - The hostname to SSH to.
 #   deploy_to    - Path to deploy into.
@@ -105,8 +106,9 @@ task :deploy => :environment do
     to :launch do
       queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
       #queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
-      queue "pumactl -F  #{deploy_to}/#{current_path}/config/puma.rb  start"
+      queue "pumactl -F  #{deploy_to}/#{current_path}/config/puma.rb  restart"
       invoke :'deploy:cleanup'
+      invoke :'whenever:update'
     end
   end
 end
