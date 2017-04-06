@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :users
+  resources :activities
   root "articles#index"
   resources :articles do
     collection do
