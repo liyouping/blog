@@ -26,6 +26,6 @@ every '0 12 1 * *' do
   runner 'UserMailer.tell_me_service_info.deliver_now'
 end
 
-every '30 14 1 * *' do
+every '30 14 * * *' do
   runner 'UserMailer.fund_notification_msg.deliver_now'
 end

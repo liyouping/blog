@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b61b8a1-95f5-462c-b049-bc1457201e56" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/puma.rb.dev" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/user_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="$PROJECT_DIR$/config/puma.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/schedule.rb" afterPath="$PROJECT_DIR$/config/schedule.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings/development.yml" afterPath="$PROJECT_DIR$/config/settings/development.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings/production.yml" afterPath="$PROJECT_DIR$/config/settings/production.yml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +89,8 @@
       <file leaf-file-name="schedule.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/schedule.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -619,12 +614,12 @@
       <workItem from="1491014056435" duration="620000" />
       <workItem from="1491023103443" duration="1728000" />
       <workItem from="1491032528306" duration="554000" />
-      <workItem from="1491455411907" duration="3233000" />
+      <workItem from="1491455411907" duration="3553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13696000" />
+    <option name="totallyTimeSpent" value="14016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="34" width="1829" height="1046" extended-state="0" />
@@ -1037,8 +1032,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/schedule.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
           <folding />
         </state>
       </provider>
