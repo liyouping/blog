@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
 
 	
 	def  idcard
-		send_data = {"appid"=> "1253248133","bucket"=>"images","card_type"=>0,"url_list"=>["http://liyouping.cn/assets/mycard.jpg"]}
+		send_data = {"appid"=> "12532a1231232148133","bucket"=>"images","card_type"=>0,"url_list"=>["http://gold800.cn/mycard.jpg"]}
 		header = {"Host"=> "service.image.myqcloud.com","Authorization"=> get_sign,"Content-Type"=>"application/json"}
 		# response = send_https("https://www.gold800.com:9250/HomeV2Controller/HomeLoadVIP", "psot",send_data, header)
 		response = send_http("http://service.image.myqcloud.com/ocr/idcard","psot", send_data, header)

@@ -1,9 +1,9 @@
 development:
-  name: '17717045404'
-  pwd: 'li19910404'
+  name: ''
+  pwd: ''
 
 production:
-  name: '17717045404'
-  pwd: 'li19910404'
-  appid: 'wx616a131ec7e629ba'
-  appsecret: '454b2ec2bbda1a8425aa1a9a014b258f'
+  name: ''
+  pwd: ''
+  appid: ''
+  appsecret: ''

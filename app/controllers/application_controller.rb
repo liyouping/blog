@@ -39,10 +39,10 @@ class ApplicationController < ActionController::Base
 
   #获取签名
   def get_sign
-    appid = "1253248133"
-    bucket = "images"
-    secret_id = "AKIDW3LOCkFWZNuBE1fmmZ6f05tPikVyJ6qK"
-    secret_key = "KPDm9IBrGNGrCGFF0g6HDtJTO3RaS4QW"
+    appid = "12532123243448133"
+    bucket = "asdsadsad"
+    secret_id = "AKIDW3LOCkFWZNdasadsuBE1fmmZ6f05tPikVyJ6qK"
+    secret_key = "KPDm9IBsdffdsd3rGNGrCGFF0g6HDtJTO3RaS4QW"
     expired = Time.now.to_i + 2592000
     onceExpired = 0
     current = Time.now.to_i
