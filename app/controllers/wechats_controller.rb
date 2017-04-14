@@ -4,7 +4,7 @@ class WechatsController < ApplicationController
 
   #当用户发消息的时候
   on :text do |request, content|
-    if content == "图文"
+    if content.include? "图文"
       # 微信最多显示8条新闻，大于8条将只取前8条
       count = content.gsub!(/\D/, "").to_i
       if count <= 0
