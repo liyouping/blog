@@ -1,0 +1,507 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+*/
+/*reset.css*/
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+pre, code {
+  font-size:1.1em;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*clear fix*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix{height:1%;}
+/*start layout*/
+body{
+	background:#fff;
+	color:#333;
+	font-size:75%;
+	font-family:Arial;
+	margin:0;
+	line-height:1.5em;
+}
+textarea,input,select{
+	font-family:Arial;
+	font-size:1em;
+}
+h1{
+	color:#9ac;
+	font-size:2em;
+	margin-bottom:0.5em;
+}
+h2{
+	text-align:left;
+	color:#d46021;
+	font-size:1.3em;
+	padding-left:0;
+}
+a{
+	color:#258;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* master layout */
+#top {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+}
+#searchbox {
+  position: fixed;
+  top: 35px;
+  width: 100%;
+  height: 30px;
+  padding: 5px 20px;
+  background-color: #ccc;
+  border-bottom: 2px dotted #999;
+}
+#namespaces {
+  position: fixed;
+  top: 65px;
+  width: 200px;
+  height: calc(100% - 65px);
+  overflow-y: scroll;
+  background-color: #ddd;
+  padding-top: 10px;
+  box-shadow: inset -5px 4px 8px #aaa;
+}
+#inside {
+  position: fixed;
+  top: 65px;
+  left: 200px;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+
+/* inside layout */
+div#container{
+	width:100%;
+	margin:0 auto;
+	font-size:1em;
+}
+div#container h1 {
+  padding: 5px 20px;
+  background-color: #000;
+  margin: 0;
+  height: 35px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+div#container h1 a {
+  color: #8ac;
+  text-decoration: none;
+}
+div#container h1 a:hover {
+  color: #fff;
+}
+div#container h1 .right {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+  margin-left: 20px;
+}
+div#container h1 .center {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  display: inline-block;
+  float: right;
+}
+div#container #success {
+  padding: 5px 20px;
+  background-color: #ada;
+}
+div#container #error {
+  padding: 5px 20px;
+  background-color: #daa;
+}
+div#container #notice {
+  padding: 5px 20px;
+  background-color: #dba;
+}
+/* menu namespaces */
+#namespaces ul {
+  border-top: 1px dotted #aaa;
+  border-bottom: 1px dotted #aaa;
+  margin-bottom: 1px;
+  font-weight: normal;
+}
+#namespaces .num {
+  font-size: 10px;
+  color: #999;
+}
+#namespaces ul .display {
+  width: 42px;
+  height: 10px;
+  margin-top: 3px;
+  float: right;
+  position: absolute;
+  right: 0;
+}
+#namespaces ul .display:hover {
+  background-color: #fff;
+  background: -moz-linear-gradient(0% 0% 0deg, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(0% 0% 0deg, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+  background: gradient(0% 0% 0deg, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+}
+#namespaces ul .display:hover:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid #369;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+#namespaces > ul > li {
+  font-weight: bold;
+}
+#namespaces ul li {
+  padding-left: 12px;
+  cursor: pointer;
+  position: relative;
+}
+#namespaces ul li.item {
+  font-style: italic;
+}
+#namespaces ul li:hover {
+  background-color: #cfcfcf;
+}
+#namespaces ul li ul li:hover {
+  background-color: #c4c4c4;
+}
+#namespaces ul li ul li ul li:hover {
+  background-color: #b8b8b8;
+}
+#namespaces ul li ul li ul li ul li:hover {
+  background-color: #b0b0b0;
+}
+#namespaces ul li ul li ul li ul li ul li:hover {
+  background-color: #a4a4a4;
+}
+#namespaces ul li.item:before {
+  position: absolute;
+  content: "- ";
+  margin-left: -9px;
+  color: #777;
+}
+#namespaces ul li.dir:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid #999;
+  margin-left: -9px;
+  margin-top: 4px;
+}
+#namespaces ul li ul {
+  display: none;
+}
+#namespaces ul li ul.view {
+  display: block;
+}
+/* paging */
+div.paging {
+	text-align: left;
+}
+div.paging div {
+	padding: 2px 20px;
+	border: solid 1px #d5d6d5;
+  border-left: 0;
+	background: #f1f1f1;
+  border-radius: 0 15px 15px 0;
+}
+ul.paging {
+	display: block;
+  margin: 0;
+}
+ul.paging li {
+	display: block;
+	margin: 0;
+	float: left;
+}
+ul.paging li.selected a {
+	color: #fff;
+	background: #258;
+	font-weight: bold;
+  width: 20px;
+	padding: 7px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+ul.paging li a {
+	line-height: 1em;
+	padding: 0.5em 0.5em;
+  min-width: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 10px;
+}
+ul.paging li a:hover {
+  background: #ccc;
+}
+ul.paging li.selected a:hover {
+  background: #000;
+}
+li.gap {
+  padding: 0 1em;
+  letter-spacing: .5em;
+}
+/*forms filter*/
+#searchbox .sep {
+  margin-left: 40px;
+}
+div#searchbox select{
+	margin-left:1.5em;
+}
+div#searchbox input.text-default{
+	width:100px;
+}
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: #444;
+  padding: 2px 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #eee;
+  line-height: 16px;
+  box-shadow: inset -1px 1px 3px #fff, inset 1px -1px 3px #999;
+  text-shadow: -1px 1px 0px #fff;
+}
+.btn:hover {
+  box-shadow: inset -1px 1px 1px #fff, inset 1px -1px 1px #999;
+  background: #ccc;
+  color: #258;
+}
+.btn:active {
+  box-shadow: inset -1px 1px 1px #999, inset 1px -1px 1px #fff;
+}
+input[type=submit] {
+  cursor: pointer;
+  font-weight: bold;
+  font-weight: bold;
+  color: #444;
+  padding: 1px 10px;
+  border: 1px solid #666;
+  line-height: 16px;
+  border-radius: 4px;
+  background-color: #eee;
+  box-shadow: inset -1px 1px 3px #fff, inset 1px -1px 3px #999;
+  text-shadow: -1px 1px 0px #fff;
+}
+input[type=submit]:hover {
+  box-shadow: inset -1px 1px 1px #fff, inset 1px -1px 1px #999;
+  background: #ccc;
+  color: #258;
+}
+input[type=submit]:active {
+  box-shadow: inset -1px 1px 1px #999, inset 1px -1px 1px #fff;
+}
+/*translation edit*/
+div.translations {
+}
+p.translate {
+  border-top: solid 1px #d5d6d5;
+	border-bottom: solid 1px #d5d6d5;
+	background: #f1f1f1;
+	padding: 4px 20px;
+}
+div.translation {
+  padding: 6px 20px;
+  margin-bottom: 6px;
+  border-bottom: solid 1px #d5d6d5;
+  clear:both;
+}
+div.translation .change {
+  position: absolute;
+  display: inline-block;
+  margin-left: -15px;
+  cursor: pointer;
+  color: #c3c6c9;
+  text-decoration: none;
+}
+div.translation .change:hover {
+  color: #369;
+}
+div.translation input, div.translation textarea {
+  font-family: monospace;
+  font-size: 1.1em;
+	width: 100%;
+	display: inline-block;
+	padding: 4px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  position: relative;
+}
+div.translation textarea {
+}
+div.translation em strong {
+	color:#333;
+	padding-right:0.5em;
+}
+.translation .right {
+  float: right;
+}
+.translation .files {
+  padding: 1px 5px;
+  background-color: #369;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  float: right;
+  display: inline;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.translation .files .count {
+  display: inline-block;
+
+}
+.translation .files .filelist {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: auto;
+  width: 300px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #369;
+  z-index: 1;
+  color: #000;
+}
+.translation .files:hover .filelist {
+  display: block;
+}
+.translation .key {
+  color: #666;
+}
+.translation .delete {
+  padding: 0 5px;
+  text-decoration: none;
+  background-color: #999;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.translation .delete:hover {
+  background-color: #900;
+}
+.translation .keytext {
+  padding: 5px;
+  color: #678;
+}
+div.translation a{
+}
+div.translation input.btnDefault{
+	margin:0 0 1em;
+	width:auto;
+}
+.focus-text{
+}
+div.selected{
+}
+.display{
+  display:block !important;
+}
+/*feedback*/
+.long-translation {
+  clear: both;
+}
+.long-translation .translation-text {
+  float: left;
+  width: 50%;
+  padding: 4px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+.long-translation .translation-textarea {
+  float: left;
+  width: 50%;
+}
+.long-translation .translation-text,
+.long-translation .translation-textarea textarea {
+  line-height: 175%;
+  font-family: monospace;
+}
+
+.translation input,
+.long-translation .translation-textarea textarea {
+  background-color: #f3f6f9;
+}
+
+.flash {
+  text-align: right;
+}
+.clear {
+  clear: both;
+}
+
