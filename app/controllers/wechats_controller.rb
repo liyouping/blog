@@ -17,7 +17,9 @@ class WechatsController < ApplicationController
         article.item title: "#{index} #{n[:title]}", description: n[:content], pic_url: 'http://www.baidu.com/img/bdlogo.gif', url: 'http://www.baidu.com/'
       end
     else
-      request.reply.text "echo: #{content}" # Just echo
+      nickname = wechat.user(request[:FromUserName])['nickname'] #调用 api 获得发送者的nickname
+
+      request.reply.text "#{nickname}说#{content}" # Just echo
     end
 
 
