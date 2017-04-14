@@ -1,0 +1,21 @@
+default: &default
+  appid: "app_id"
+  secret: "app_secret"
+  token:  "app_token"
+  access_token: "/var/tmp/wechat_access_token"
+  jsapi_ticket: "/var/tmp/wechat_jsapi_ticket"
+
+production:
+  appid: <%= Rails.configuration.my_config['wx_appid'] %>
+  secret: <%= Rails.configuration.my_config['wx_secret'] %>
+  token:   <%= Rails.configuration.my_config['wx_token'] %>
+  access_token: <%= Rails.configuration.my_config['wx_access_token'] %>
+#  jsapi_ticket: <%= ENV['WECHAT_JSAPI_TICKET'] %>
+#  oauth2_cookie_duration: <%= ENV['WECHAT_OAUTH2_COOKIE_DURATION'] %> # seconds
+
+development:
+  <<: *default
+#  trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+
+test:
+  <<: *default

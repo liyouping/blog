@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-has_manay :activities
-has_manay :user_acitivities
+has_many :activities
+has_many :user_acitivities
 end

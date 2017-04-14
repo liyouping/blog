@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
 
+  resource :wechat, only: [:show, :create]
   resources :users
   resources :activities
+  resources :images do
+    collection do
+        get :idcard
+    end
+  end
+
   root "articles#index"
   resources :articles do
     collection do

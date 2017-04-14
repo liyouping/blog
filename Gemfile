@@ -60,6 +60,8 @@ gem 'coderay'
 gem 'devise'
 #定时任务
 gem 'whenever', :require => false
+#微信公众号开发
+gem "wechat"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
