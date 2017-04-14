@@ -14,7 +14,7 @@ module Blog
     # -- all .rb files in that directory are automatically loaded.
     config.my_config = config_for(:my_config)
 
-	config.eager_load_paths += %W(#{Rails.root.join}/lib #{Rails.root.join('app', '*')})
+	  config.eager_load_paths += %W(#{Rails.root.join}/lib #{Rails.root.join('app', '*')})
 
     config.active_record.raise_in_transactional_callbacks = true
 
@@ -32,8 +32,15 @@ module Blog
     # Add the fonts path
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
-	config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+	  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+    #国际化
+    # 指定 I18n 库搜索翻译文件的路径
+    I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
+
+    # 修改默认区域设置（默认是 :en）
+    I18n.default_locale = :zh
   end
 end
