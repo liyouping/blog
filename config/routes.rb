@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  scope "(:locale)", locale: /en|zh-CN/ do
+  scope "(:locale)", locale: /en|zh_CN/ do
     resource :wechat, only: [:show, :create]
     resources :users
     resources :activities
