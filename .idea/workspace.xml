@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b61b8a1-95f5-462c-b049-bc1457201e56" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -695,12 +692,12 @@
       <workItem from="1491965176947" duration="5521000" />
       <workItem from="1492050418565" duration="8403000" />
       <workItem from="1492072723176" duration="1904000" />
-      <workItem from="1492137419446" duration="11649000" />
+      <workItem from="1492137419446" duration="11808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47557000" />
+    <option name="totallyTimeSpent" value="47716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="34" width="1863" height="1046" extended-state="0" />
