@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
   end
 
   def fund_notification_msg
-    if Date.current.wday >0 && Date.current.wday <6
+    if DateUtils.workday?(Date.current.strftime("%Y%m%d"))
       mail(from: "cc基金提醒服务 <17717045404@163.com>", to:Settings.email.fund_email,subject: "看基金啦!")
     end
   end
