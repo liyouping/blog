@@ -1,16 +1,17 @@
 class CreateActivities < ActiveRecord::Migration[5.0]
   def change
     create_table :activities do |t|
-      t.integer :user_id
+      t.string :open_id
       t.string :title
-      t.string :img
-      t.text :content
-      t.datetime :date
+      t.string :image
+      t.datetime :activity_date
       t.string :address
-      t.integer :max_count,default: 4
-      t.datetime :expiry_date
+      t.integer :max_count
+      t.text :detail
+      t.datetime :apply_start_time
+      t.datetime :apply_end_time
       t.datetime :deleted_at
-      
+
       t.timestamps
     end
   end

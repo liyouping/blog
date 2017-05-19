@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
   </div>
 
   <div class="field">
-    <%= f.label :date %>
-    <%= f.datetime_select :date %>
+    <%= f.label :activity_date %>
+    <%= f.datetime_select :activity_date %>
   </div>
 
   <div class="field">
@@ -37,8 +37,23 @@
   </div>
 
   <div class="field">
-    <%= f.label :expiry_date %>
-    <%= f.datetime_select :expiry_date %>
+    <%= f.label :detail %>
+    <%= f.text_area :detail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :apply_start_time %>
+    <%= f.datetime_select :apply_start_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :apply_end_time %>
+    <%= f.datetime_select :apply_end_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :deleted_at %>
+    <%= f.datetime_select :deleted_at %>
   </div>
 
   <div class="actions">

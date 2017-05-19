@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  open_id: MyString
+  nick_name: MyString
+  avatar_url: MyString
+  gender: 1
+  province: MyString
+  city: MyString
+  country: MyString
+  deleted_at: 2017-05-19 17:15:19
+
+two:
+  open_id: MyString
+  nick_name: MyString
+  avatar_url: MyString
+  gender: 1
+  province: MyString
+  city: MyString
+  country: MyString
+  deleted_at: 2017-05-19 17:15:19

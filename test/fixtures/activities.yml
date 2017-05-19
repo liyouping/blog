@@ -2,16 +2,22 @@
 
 one:
   title: MyString
-  content: MyText
-  date: 2017-04-06 15:35:47
+  image: MyString
+  activity_date: 2017-05-19 16:45:34
   address: MyString
   max_count: 1
-  expiry_date: 2017-04-06 15:35:47
+  detail: MyText
+  apply_start_time: 2017-05-19 16:45:34
+  apply_end_time: 2017-05-19 16:45:34
+  deleted_at: 2017-05-19 16:45:34
 
 two:
   title: MyString
-  content: MyText
-  date: 2017-04-06 15:35:47
+  image: MyString
+  activity_date: 2017-05-19 16:45:34
   address: MyString
   max_count: 1
-  expiry_date: 2017-04-06 15:35:47
+  detail: MyText
+  apply_start_time: 2017-05-19 16:45:34
+  apply_end_time: 2017-05-19 16:45:34
+  deleted_at: 2017-05-19 16:45:34

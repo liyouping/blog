@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  open_id: MyString
+  activity_id: 1
+
+two:
+  open_id: MyString
+  activity_id: 1

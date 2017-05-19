@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Open:</strong>
+  <%= @wx_user.open_id %>
+</p>
+
+<p>
+  <strong>Nick name:</strong>
+  <%= @wx_user.nick_name %>
+</p>
+
+<p>
+  <strong>Avatar url:</strong>
+  <%= @wx_user.avatar_url %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @wx_user.gender %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @wx_user.province %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @wx_user.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @wx_user.country %>
+</p>
+
+<p>
+  <strong>Deleted at:</strong>
+  <%= @wx_user.deleted_at %>
+</p>
+
+<%= link_to 'Edit', edit_wx_user_path(@wx_user) %> |
+<%= link_to 'Back', wx_users_path %>

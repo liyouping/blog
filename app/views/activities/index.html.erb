@@ -6,11 +6,14 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Content</th>
-      <th>Date</th>
+      <th>Image</th>
+      <th>Activity date</th>
       <th>Address</th>
       <th>Max count</th>
-      <th>Expiry date</th>
+      <th>Detail</th>
+      <th>Apply start time</th>
+      <th>Apply end time</th>
+      <th>Deleted at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,11 +22,14 @@
     <% @activities.each do |activity| %>
       <tr>
         <td><%= activity.title %></td>
-        <td><%= activity.content %></td>
-        <td><%= activity.date %></td>
+        <td><%= activity.image %></td>
+        <td><%= activity.activity_date %></td>
         <td><%= activity.address %></td>
         <td><%= activity.max_count %></td>
-        <td><%= activity.expiry_date %></td>
+        <td><%= activity.detail %></td>
+        <td><%= activity.apply_start_time %></td>
+        <td><%= activity.apply_end_time %></td>
+        <td><%= activity.deleted_at %></td>
         <td><%= link_to 'Show', activity %></td>
         <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
         <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>

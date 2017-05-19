@@ -6,13 +6,13 @@
 </p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @activity.content %>
+  <strong>Image:</strong>
+  <%= @activity.image %>
 </p>
 
 <p>
-  <strong>Date:</strong>
-  <%= @activity.date %>
+  <strong>Activity date:</strong>
+  <%= @activity.activity_date %>
 </p>
 
 <p>
@@ -26,8 +26,23 @@
 </p>
 
 <p>
-  <strong>Expiry date:</strong>
-  <%= @activity.expiry_date %>
+  <strong>Detail:</strong>
+  <%= @activity.detail %>
+</p>
+
+<p>
+  <strong>Apply start time:</strong>
+  <%= @activity.apply_start_time %>
+</p>
+
+<p>
+  <strong>Apply end time:</strong>
+  <%= @activity.apply_end_time %>
+</p>
+
+<p>
+  <strong>Deleted at:</strong>
+  <%= @activity.deleted_at %>
 </p>
 
 <%= link_to 'Edit', edit_activity_path(@activity) %> |

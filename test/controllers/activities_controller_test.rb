@@ -17,7 +17,7 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create activity" do
     assert_difference('Activity.count') do
-      post activities_url, params: { activity: { address: @activity.address, content: @activity.content, date: @activity.date, expiry_date: @activity.expiry_date, max_count: @activity.max_count, title: @activity.title } }
+      post activities_url, params: { activity: { activity_date: @activity.activity_date, address: @activity.address, apply_end_time: @activity.apply_end_time, apply_start_time: @activity.apply_start_time, deleted_at: @activity.deleted_at, detail: @activity.detail, image: @activity.image, max_count: @activity.max_count, title: @activity.title } }
     end
 
     assert_redirected_to activity_url(Activity.last)
@@ -34,7 +34,7 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update activity" do
-    patch activity_url(@activity), params: { activity: { address: @activity.address, content: @activity.content, date: @activity.date, expiry_date: @activity.expiry_date, max_count: @activity.max_count, title: @activity.title } }
+    patch activity_url(@activity), params: { activity: { activity_date: @activity.activity_date, address: @activity.address, apply_end_time: @activity.apply_end_time, apply_start_time: @activity.apply_start_time, deleted_at: @activity.deleted_at, detail: @activity.detail, image: @activity.image, max_count: @activity.max_count, title: @activity.title } }
     assert_redirected_to activity_url(@activity)
   end
 
