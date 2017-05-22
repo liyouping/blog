@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :store_images
+  resources :stores
   resources :apply_activities
   resources :wx_users
   resources :activity_types

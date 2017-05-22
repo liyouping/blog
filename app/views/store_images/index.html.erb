@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Store Images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Store</th>
+      <th>Image</th>
+      <th>Position</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @store_images.each do |store_image| %>
+      <tr>
+        <td><%= store_image.store_id %></td>
+        <td><%= store_image.image_id %></td>
+        <td><%= store_image.position %></td>
+        <td><%= link_to 'Show', store_image %></td>
+        <td><%= link_to 'Edit', edit_store_image_path(store_image) %></td>
+        <td><%= link_to 'Destroy', store_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Store Image', new_store_image_path %>

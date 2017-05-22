@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170519092646) do
+ActiveRecord::Schema.define(version: 20170522012907) do
 
   create_table "accesses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin" do |t|
     t.integer  "article_id"
@@ -77,6 +77,26 @@ ActiveRecord::Schema.define(version: 20170519092646) do
     t.string   "tel"
     t.string   "email"
     t.text     "message",    limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "store_images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin" do |t|
+    t.integer  "store_id"
+    t.string   "img_url"
+    t.integer  "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin" do |t|
+    t.string   "title"
+    t.string   "sub_title"
+    t.string   "icon"
+    t.string   "tel_num"
+    t.string   "landline"
+    t.string   "address"
+    t.text     "detail",     limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end

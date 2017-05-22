@@ -63,6 +63,9 @@ gem 'whenever', :require => false
 #微信公众号开发
 gem "wechat"
 
+#数据上上下下排序
+gem "acts_as_list"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
